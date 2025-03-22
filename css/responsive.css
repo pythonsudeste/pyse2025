@@ -26,6 +26,9 @@ footer {
 .logo {
     width: 67%;
 }
+nav {
+    width: 23%;
+}
 #banner {
     padding: 250px 0 50px;
 }
