@@ -129,6 +129,8 @@ textarea {
 }
 button {
   overflow: visible;
+  cursor: pointer;
+
 }
 button,
 select {
