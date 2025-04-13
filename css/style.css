@@ -678,23 +678,32 @@ iframe {
     object-fit: cover;
 }
 
-.text-box-hotel {
-    padding: 15px;
-    background-color: #FFFFFF;
-    border-radius: 5px;
-    margin-bottom: 15px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    width: 80%;
-    padding: 20px;
+.hotel-box {
+    width: 50%;
     margin: auto;
 }
 
+#cupom {
+    color: #399ba8;
+}
+
+.text-box-hotel {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    margin: 35px auto;
+    /* margin-bottom: 15px; */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    padding: 20px;
+}
+
 .text-box-hotel h4 {
-    color: #565FF2;
+    color: #810121;
 }
 
 .text-box-hotel h5 {
     font-weight: bold;
+    margin-top: 12px;
 }
 
 .talk-box {
