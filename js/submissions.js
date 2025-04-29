@@ -7,6 +7,7 @@ function renderSubmissions(submissionsResponse) {
     const submissions = submissionsResponse.results;
 
     submissions.forEach((submission) => {
+        if(submission.state !== "confirmed") return;
         const submissionElement = document.createElement("div");
         submissionElement.className = "submission";
 
