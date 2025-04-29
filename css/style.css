@@ -941,7 +941,7 @@ iframe {
 
 .submissions-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 20px;
 }
 
@@ -951,7 +951,9 @@ iframe {
     padding: 15px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+    display: flex;
+    flex-direction: column;
+    }
 
 .submission-title {
     font-size: 20px;
