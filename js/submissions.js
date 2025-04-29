@@ -5,8 +5,9 @@ const submissionsContainer = document.getElementById("submissions-container");
 
 function renderSubmissions(submissionsResponse) {
     const submissions = submissionsResponse.results;
-
-    submissions.forEach((submission) => {
+    submissions
+        .sort((a, b) => b.speakers.length - a.speakers.length)
+        .forEach((submission) => {
         if (submission.state !== "confirmed") return;
         const submissionElement = document.createElement("div");
         submissionElement.className = "submission";
