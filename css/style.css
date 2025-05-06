@@ -283,11 +283,13 @@ h4 {
 
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
 .division {
     margin: 50px 0;
+
 }
 
 #sobre h3 {
@@ -296,6 +298,7 @@ h4 {
 
 .text-box p:first-of-type {
     margin-bottom: 20px; 
+    
 }
 
 .cronograma-box {
@@ -405,6 +408,7 @@ h4 {
 /* Adjust width of the website content */
 .website-content {
     flex: 2;
+
 }
 
 .text-box {
@@ -621,6 +625,7 @@ iframe {
         display: block;
         /* Revert to block display */
         width: 100%;
+        padding: 10px;
         /* Full width on mobile */
     }
 }
@@ -645,7 +650,12 @@ iframe {
     align-items: center;
     /* Alinha os itens verticalmente */
     margin-left: 20px;
-    font-size: 12px;
+    font-size: 1em;
+     /* Media query for mobile devices */
+     @media (max-width: 768px) {
+        margin-left: 0px;
+        /* Full width on mobile */
+    }
 }
 
 .speaker-bio p {
@@ -681,6 +691,9 @@ iframe {
 .hotel-box {
     width: 50%;
     margin: auto;
+    @media (max-width: 768px) {
+        width: 80%;    /* Full width on mobile */
+    }
 }
 
 #cupom {
@@ -695,6 +708,10 @@ iframe {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     width: 80%;
     padding: 20px;
+    @media (max-width: 768px) {
+        padding: 10px;  
+        margin: 10px;      /* Full width on mobile */
+    }
 }
 
 .text-box-hotel h4 {
@@ -732,9 +749,6 @@ iframe {
     border: 1px solid #ddd;
 }
 
-.container {
-    flex-direction: column;
-}
 
 .table-responsive {
     overflow-x: auto;
