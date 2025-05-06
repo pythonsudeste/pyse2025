@@ -28,9 +28,9 @@ function renderSubmissions(submissionsResponse) {
             <div class="submission-speakers">
                 ${speakers}
             </div>
-            <p class="submission-track"><strong>Track:</strong> ${submission.track["pt-br"]}</p>
-            <p class="submission-type"><strong>Type:</strong> ${submission.submission_type["pt-br"]}</p>
-            <p class="submission-duration"><strong>Duration:</strong> ${submission.duration} minutes</p>
+            <p class="submission-track"><strong>Nivel:</strong> ${submission.track["pt-br"]}</p>
+            <p class="submission-type"><strong>Tipo:</strong> ${submission.submission_type["pt-br"]}</p>
+            <p class="submission-duration"><strong>Duração:</strong> ${submission.duration} minutos</p>
         `;
 
         submissionsContainer.appendChild(submissionElement);
