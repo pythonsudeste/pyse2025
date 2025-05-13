@@ -690,12 +690,9 @@ iframe {
 
 .hotel-box {
     display: flex;
-    flex-wrap: wrap;
-    width: 50%;
-    margin: auto;
-    @media (max-width: 768px) {
-        width: 80%;
-    }
+    flex-wrap: wrap; /* Permite que os elementos quebrem linha em telas menores */
+    gap: 20px; /* Espaçamento entre os elementos */
+    justify-content: space-between; /* Distribui os elementos uniformemente */
 }
 
 #cupom {
@@ -703,18 +700,14 @@ iframe {
 }
 
 .text-box-hotel {
-    background-color: #FFFFFF;
-    border-radius: 5px;
-    margin: 35px auto;
-    /* margin-bottom: 15px; */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    width: 80%;
+    flex: 1; /* Faz com que todos os elementos tenham o mesmo tamanho */
+    min-width: 300px; /* Define um tamanho mínimo para os elementos */
+    max-width: 48%; /* Limita o tamanho máximo para evitar que ocupem mais de 50% */
+    background-color: #f9f9f9; /* Cor de fundo para destacar */
     padding: 20px;
-    min-width: 300px;
-    @media (max-width: 768px) {
-        padding: 10px;
-        margin: 10px;
-    }
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .text-box-hotel h4 {
@@ -1010,4 +1003,63 @@ iframe {
 
 .speaker-email:hover {
     text-decoration: underline;
+}
+
+#agenda-card {
+    margin: 40px auto;
+    text-align: center;
+}
+
+.agenda-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #810121; /* Vermelho */
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.agenda-icon {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.agenda-content {
+    text-align: left;
+    max-width: 600px;
+}
+
+.agenda-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ffebd2; /* BG color */
+}
+
+.agenda-content p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.agenda-link {
+    display: inline-block;
+    background-color: #ffebd2; /* BG color */
+    color: #810121; /* Vermelho */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.agenda-link:hover {
+    background-color: #f4d4b0;
 }
